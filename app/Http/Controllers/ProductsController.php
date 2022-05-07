@@ -1,11 +1,5 @@
 <?php
-<<<<<<< HEAD
 namespace App\Http\Controllers;
-=======
-
-namespace App\Http\Controllers;
-
->>>>>>> origin/main
 use App\Models\Products;
 use Illuminate\Http\Request;
 
@@ -80,9 +74,4 @@ class ProductsController extends Controller
         return redirect()->route('products.index')
             ->with('success','Product deleted successfully');
     }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/main
 }
