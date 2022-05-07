@@ -40,6 +40,7 @@
                     <label for="image" class="form-label">Product Image <span class="text-danger">*</span></label>
                     <input id="image" name="image" type="file" class="form-control">
                 </div>
+<<<<<<< HEAD
                 <div>
                     <button type="submit" class="btn btn-success btn-icon-text mb-2 mb-md-0">
                         Save Product Data
@@ -47,6 +48,15 @@
                 </div>
 
 
+=======
+
+                <div>
+                    <button type="submit" class="btn btn-success btn-icon-text mb-2 mb-md-0">
+                       Save Product Data
+                    </button>
+                </div>
+
+>>>>>>> origin/main
             </form>
         </div>
 
