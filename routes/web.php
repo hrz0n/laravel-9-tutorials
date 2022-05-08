@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::resource('products', ProductsController::class);
+
+
 Route::prefix('posts')->group(function () {
     Route::get('index', [PostsController::class, 'index']);
     Route::post('store', [PostsController::class, 'store']);
