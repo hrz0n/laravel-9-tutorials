@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +15,10 @@
     <!-- common css -->
     <link href="{{asset('css/style.min.css')}}" rel="stylesheet" />
     <!-- end common css -->
+
+    <link href="{{asset('css/style.min.css')}}" rel="stylesheet" />
+    <link  type="text/css" href="{{asset('css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/toastr.min.css')}}">
 </head>
 <body class="navbar-dark" data-base-url="/">
 <div class="main-wrapper" id="app">
@@ -61,5 +66,11 @@
 <!-- common js -->
 <script src="{{asset('js/template.js')}}"></script>
 <!-- end common js -->
+
+<script type="text/javascript" charset="utf8" src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
+<script type="text/javascript" charset="utf8" src="{{asset('js/jquery.form.js')}}"></script>
+<script type="text/javascript" charset="utf8" src="{{asset('js/jquery.dataTables.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/toastr.min.js')}}"></script>
+@yield('user-script')
 </body>
 </html>
